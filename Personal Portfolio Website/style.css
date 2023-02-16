@@ -1,0 +1,424 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000;
+}
+/*loader start*/
+#loader{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: anim1 1s cubic-bezier(0.19, 1, 0.22, 1) 6s both;
+}
+@keyframes anim1 {
+    to{
+        transform: translateY(-100%);
+    }
+}
+#wrapperload{
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+}
+#wrapperload .elem{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#wrapperload .elem img{
+    width: 40%;
+}
+#wrapperload .elem:nth-child(1){
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 1.5s   both;
+}
+#wrapperload .elem:nth-child(2){
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 3s   both;
+}
+#wrapperload .elem:nth-child(3){
+    animation: anim 1s cubic-bezier(0.19, 1, 0.22, 1) 4.5s   both;
+}
+
+@keyframes anim {
+    to{
+        margin-top: -100px;
+    }
+}
+/*loader end*/
+/*landing page start*/
+.wrapper{
+    height: 100vh;
+}
+header{
+    padding: 40px 50px;
+}
+header .logo{
+    float: left;
+}
+header .menu{
+    float: right;
+}
+header .menu ul li{
+    display: inline-block;
+    margin: 0 20px;
+}
+header .menu ul li:last-child{
+    margin-left: 0;
+}
+header .menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all ease .5s;
+}
+header .menu ul li a:hover{
+    color: #fff700;
+}
+.wrapper .logo h3{
+    font-size: 25px;
+    color: white;
+}
+.wrapper .logo h3 span{
+    color: yellow;
+}
+/*Header button*/
+header .menu ul li.btn a {
+    background-color: #fff700;
+    color: #000;
+    padding: 14px 27px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+header .menu ul li.btn a:hover{
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/*Container*/
+.home .container3{
+    max-width: 95%;
+    margin: 0 auto;
+}
+/*Qurban image*/
+.home .person{
+    float: right;
+    margin: 4% 6% 0;
+    position: relative;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+}
+.home .person-overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #525252;
+    z-index: 99;
+}
+/*Qurban text*/
+.home-text{
+    color: #fff;
+    margin-top: 20%;
+    position: absolute;
+}
+.home-text h6{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 16px;
+}
+.home-text h1{
+    text-transform: uppercase;
+    font-size: 100px;
+}
+.home-text p{
+    max-width: 500px;
+    font-size: 20px;
+    margin-top: 19%;
+}
+header .menu ul li.btn a{
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.home-text .name span{
+    margin-right: 250px;
+    display: inline-block;
+}
+.home-text .name span:last-child{
+    margin-right: 0;
+}
+/*default state hide*/
+.home .person img,
+.student span,
+.name span,
+.small-intro span,
+.menu li,
+.wrapper .logo h3{
+    opacity: 0;
+}
+/*landing page end*/
+
+/*Skills start*/
+.skills{
+    width: 100%;
+    display: flex;
+    padding: 5% 15rem;
+    background-color: black;
+    color: white;
+    background-color: rgb(46, 45, 45);
+}
+.right-side{
+    width: 50%;
+    height: auto;
+}
+.left-side{
+    width: 50%;
+    height: auto;
+}
+.right-side .line{
+    width: 100%;
+    height: 10%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: right;
+    justify-content: space-between;
+    display: flex;
+    color: black;
+}
+.right-side .line .line1{
+    width: 95%;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 10px 0 0 10px;
+}
+.right-side .line .line2{
+    width: 90%;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 10px 0 0 10px;
+}
+.right-side .line .line3{
+    width: 85%;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 10px 0 0 10px;
+}
+.right-side .line .line4{
+    width: 93%;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 10px 0 0 10px;
+}
+/*Skills end*/
+
+
+.container2{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    grid-auto-flow: dense;
+}
+.container2 .box{
+    background-color: #333;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    transition: .5s;
+}
+.container2 .box:hover{
+    background: #e91e63;
+}
+.container2 .box img{
+    position: relative;
+    width: 100%;
+}
+.container2 .box:nth-child(1){
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.container2 .box:nth-child(2){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.container2 .box:nth-child(4){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.container2 .box:nth-child(5){
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+
+.form{
+    width: 100%;
+    background-color:  rgb(46, 45, 45);
+    color: white;
+    padding-bottom: 4%;
+}
+.label{
+    width: 40%;
+    height: 50px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 30%;
+    padding: 1.5%;
+    font-size: 20px;
+}
+.form h1{
+    text-align: center;
+    margin-bottom: 1%;
+    padding-top: 4%;
+    font-size: 40px;
+}
+.form .btn{
+    background-color: white;
+    color: black;
+    width: 40%;
+    margin-left: 30%;
+    height: 3rem;
+    margin-top: 1%;
+    border: none;
+    font-weight: 800;
+}
+.form .btn:hover{
+    background-color: yellow;
+    transition: .3s;
+}
+
+
+.footer{
+    justify-content: center;
+    text-align: center;
+    padding: 5% 0;
+    background-color: black;
+}
+.footer p{
+    font-size: 20px;
+    color: white;
+}
+.footer span{
+    width: 10%;
+    height: 2px;
+    background: white;
+    display: flex;
+    justify-self: center;
+    margin: 1% 0 1% 45%;
+}
+.footer i{
+    color: white;
+    margin: 0 1% 0 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer i:hover{
+    color: yellow;
+}
+
+@media screen and (max-width: 1800px) {
+    
+    .wrapper{
+        width: 100vw;
+        height: 100vh;
+    }
+    .home .container3 .home-text .name{
+        font-size: 80px;
+    }
+    .home-text .name span{
+        margin-right: 220px;
+        display: inline-block;
+    }
+    .home-text h6{
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 20px;
+    }
+    .home .container3 .person img{
+        width: 900px;
+        height: 900px;
+    }
+    .home-text p{
+        max-width: 500px;
+        font-size: 20px;
+        margin-top: 30%;
+    }
+    .left-side{
+        margin-right: 1%;
+    }
+    .skills .left-side h1{
+        font-size: 25px;
+    }
+    .skills .left-side h3{
+        font-size: 18px;
+    }
+    .skills .left-side p{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    
+    .wrapper{
+        width: 100vw;
+        height: 100vh;
+    }
+    .home .container3 .home-text .name{
+        font-size: 55px;
+    }
+    .home-text .name span{
+        margin-right: 180px;
+        display: inline-block;
+    }
+    .home-text h6{
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        font-size: 15px;
+    }
+    .home .container3 .person img{
+        width: 550px;
+        height: 550px;
+    }
+    .home-text p{
+        max-width: 500px;
+        font-size: 17px;
+        margin-top: 19%;
+    }
+    .left-side{
+        margin-right: 1%;
+    }
+    .skills .left-side h1{
+        font-size: 25px;
+    }
+    .skills .left-side h3{
+        font-size: 18px;
+    }
+    .skills .left-side p{
+        font-size: 15px;
+    }
+}

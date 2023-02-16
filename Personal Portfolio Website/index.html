@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="images/all.min.css">
+    <title>Qurban's Portfolio</title>
+</head>
+<body>
+
+    
+    <!--Loader start-->
+    <div id="loader">
+        <div id="wrapperload">
+            <div class="elem">
+               <h3>Let The </h3>
+            </div>
+            <div class="elem">
+                <h3>Fucking Animation</h3>
+            </div>
+            <div class="elem">
+                <h3>Complete.</h3>
+            </div>
+            <div class="elem">
+                <h3>Then Scroll</h3>
+            </div>
+        </div>
+    </div>
+    <!--Loader end-->
+
+
+    <!--Landing page -->
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <h3>I AM <span>QURBAN</span></h3>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                   
+                    <li class="btn"><a href="#">Get in touch</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="home">
+            <div class="container3">
+                <div class="person">
+                    <span class="person-overlay"></span>
+                    <img src="images/1.jpeg" alt="">
+                </div>
+                <div class="home-text">
+                    <h6 class="student">Student</h6>
+                    <h1 class="name">Qurban</h1>
+                    <p class="small-intro">
+                        Hello guyz, my name is Qurban Ali - just 20 and I'm Website Developer at Wajahat Coaching Center
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Landing page end-->
+
+
+   <!--start skills-->
+   <div class="skills" id="about">
+        <div class="left-side">
+            <h1>WHAT I DO</h1><br>
+            <h3>Front-End & Back-End Developer</h3><br>
+            <p>Hi i am Qurban Ali. Always ready to help with your projects. I am a <br>
+            software engineer who is really passionate about giving 100% in every <br>project
+            </p><br>
+            <p>I can create fully responsive/static designs and i can also o server side <br> coding(development). Can build awesome looking desktop applications.</p>
+        </div>
+        <div class="right-side">
+            <h4>PHP</h4>
+            <div class="line"><span class="line1"></span>95%</div><br>
+            <h4>JAVASCRIPT</h4>
+            <div class="line"><span class="line2"></span>90%</div><br>
+            <h4>MYSQL</h4>
+            <div class="line"><span class="line3"></span>85%</div><br>
+            <h4>HTML<small>5</small> & CSS<small>3</small></h4>
+            <div class="line"><span class="line4"></span>93%</div>
+        </div>
+    
+    </div>
+    <hr>
+   <!--end skills-->
+
+   <!--Portfolio start-->
+   <!--<div class="container2">
+        <div class="box">
+            <div class="content">
+                <img src="images/portfolio/1.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/portfolio/2.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/portfolio/3.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/portfolio/4.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/portfolio/5.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/portfolio/6.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="images/portfolio/7.jpg" alt="">
+            </div>
+        </div>
+   </div>
+   -->
+
+   <!--Contact start-->
+   <div class="form" id="contact">
+    <h1>GET IN TOUCH</h1>
+  
+    <label for="Name*"></label>
+    <input class="label" type="text" name="Name*" id="Name*" placeholder="Enter your name"><br>
+  
+    <label for="Email*"></label>
+    <input class="label" type="text" name="" id="" placeholder="Enter your email"><br>
+  
+    <label for="Subject"></label>
+    <input class="label" type="text" name="" id="" placeholder="Type the subject"><br>
+  
+    <label for="Message"></label>
+    <input class="label" type="text" name="" id="" placeholder="Type your message here"><br>
+  
+    <button class="btn">Submit</button>
+  </div>
+
+  <!--contact end-->
+<hr>
+  <!--foooter start-->
+  <div class="footer">
+        <p>Copyright &copy; 2022 Qurban Ali Personal Profile. Designed by Qurban Ali</p>
+        <span></span>
+        <i class="fa-brands fa-2x fa-facebook"></i>
+        <i class="fa-brands fa-2x fa-square-twitter"></i>
+        <i class="fa-brands fa-2x fa-square-instagram"></i>
+  </div>
+  <!--footer end-->
+
+  <!--jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!--lettering-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+  <!--ANIME JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script >
+
+    $(document).ready(function(){
+        $(".name, .student, .small-intro").lettering();
+
+        //IMAGES OVERLAY EFFECT
+    anime({
+        targets: '.home .person-overlay',
+        translateX:2000,
+        delay:6500,
+        duration:1500,
+        easing:'easeInSine'
+    })
+    anime({
+        targets:'.home .person img',
+        opacity:1,
+        delay:7000,
+        duration:1500,
+        easing:'easeInSine'
+    })
+    //stubent
+    anime({
+        targets:'.student span',
+        opacity:1,
+        duration:1500,
+        easing:'easeInSine',
+        delay: anime.stagger(100, {start:8000})
+    })
+    //qurban name - fade in
+    anime({
+        targets:'.name span',
+        opacity: 1,
+        duration: 3000,
+        easing:'easeInSine',
+        delay:anime.stagger(100, {start: 9500})
+    })
+    //qurban 2nd animationup and down letters
+    anime({
+        targets: '.name .char2, .name .char4',
+        keyframes:[
+            {translateY: 100, duration: 1500}
+        ],
+        easing:'easeInOutExpo',
+        delay: 13000
+    })
+    anime({
+        targets: '.name .char3, .name .char5',
+        keyframes:[
+            {translateY: -100, duration: 1500}
+        ],
+        easing:'easeInOutExpo',
+        delay:13000
+    })
+    //logo
+    anime({
+        targets:'.logo h3',
+        opacity: 1,
+        duration: 8000,
+        delay:anime.stagger(150,{start:14000})
+    })
+    //menu
+    anime({
+        targets: '.menu li',
+        opacity:1,
+        duration: 8000,
+        delay: anime.stagger(150,{start: 15500})
+    })
+    //intro
+    anime({
+        targets: '.small-intro span',
+        opacity:1,
+        duration:1000,
+        easing: 'easeInSine',
+        delay: anime.stagger(50, {start: 16000}) 
+    })
+
+    
+    })
+
+
+  </script>
+</body>
+</html>
